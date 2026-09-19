@@ -40,13 +40,13 @@ export const nav = [
 ]
 
 export const hero = {
-  title: 'Turn every WhatsApp chat into a confirmed order',
-  lead: 'Your customers already message you on WhatsApp. MoOrders uses AI to take the order, confirm every detail, and send it straight to your backend. No forms, no copy and paste.',
+  title: 'Too Many Orders? Let AI Process them.',
+  lead: 'Manage Inventory and Let AI take the orders, confirm every detail, and send it straight to your Dashboard.',
   primaryCta: 'Book a demo',
   secondaryCta: 'Watch it work',
   trust: [
-    'Works with your WhatsApp Business number',
-    'Orders reach your backend in seconds',
+    'Works with your WhatsApp number',
+    'Orders reach your dashboard in seconds',
   ],
 }
 
@@ -174,8 +174,7 @@ export const footer = {
       title: 'Product',
       links: [
         { label: 'How it works', href: '#how-it-works' },
-        { label: 'Order dashboard', href: '#features' },
-        { label: 'Backend & API', href: '#backend' },
+        { label: 'Features', href: '#features' },
         { label: 'Pricing', href: '#get-started' },
       ],
     },
@@ -183,31 +182,29 @@ export const footer = {
       title: 'Support',
       links: [
         { label: 'Getting started', href: '#' },
-        { label: 'Help center', href: '#' },
         { label: 'Contact us', href: '#' },
         { label: 'Book a demo', href: '#' },
-        { label: 'System status', href: '#' },
       ],
     },
-    {
-      title: 'Resources',
-      links: [
-        { label: 'Blog', href: '#' },
-        { label: 'Guides', href: '#' },
-        { label: 'API docs', href: '#' },
-        { label: 'Community', href: '#' },
-        { label: 'Changelog', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      id: 'company',
-      links: [
-        { label: 'About us', href: '#' },
-        { label: 'Careers', href: '#' },
-        { label: 'Press', href: '#' },
-      ],
-    },
+    // {
+    //   title: 'Resources',
+    //   links: [
+    //     { label: 'Blog', href: '#' },
+    //     { label: 'Guides', href: '#' },
+    //     { label: 'API docs', href: '#' },
+    //     { label: 'Community', href: '#' },
+    //     { label: 'Changelog', href: '#' },
+    //   ],
+    // },
+    // {
+    //   title: 'Company',
+    //   id: 'company',
+    //   links: [
+    //     { label: 'About us', href: '#' },
+    //     { label: 'Careers', href: '#' },
+    //     { label: 'Press', href: '#' },
+    //   ],
+    // },
   ],
   legal: [
     { label: 'Privacy', href: '#' },
