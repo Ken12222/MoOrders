@@ -5,12 +5,12 @@
 
 export const brand = {
   name: 'MoOrders',
-  tagline: 'AI order taking on WhatsApp, connected to your backend.',
+  tagline: 'AI order taking on WhatsApp, connected to your dashboard.',
 }
 
-/** TODO: point these at your real pages (booking page, sign-up, login, docs). */
+/** TODO: point these at your real destinations (email, sign-up, login, docs). */
 export const links = {
-  demo: '#',
+  demo: 'mailto:hello@moorders.com?subject=Book%20a%20demo%20with%20MoOrders&body=Hi%20MoOrders%2C%0A%0AI%27d%20like%20to%20book%20a%20demo.%0A%0A',
   signup: '#',
   login: '#',
   docs: '#',
@@ -111,7 +111,7 @@ export const ai = {
 
 export const pipeline = {
   id: 'backend',
-  title: 'From chat to backend, automatically',
+  title: 'From chat to dashboard, automatically',
   lead: 'Every order follows the same path, so nothing gets lost between a customer’s message and your fulfillment system.',
   heading: 'Send orders where you need them',
   body: 'The moment a customer confirms, MoOrders sends the order to your backend as clean, structured data.',
@@ -126,7 +126,7 @@ export const pipeline = {
   nodes: {
     start: { title: 'New message', chips: ['Text', 'Voice note'], joiner: 'or' },
     confirm: { title: 'AI confirms the order', chip: 'status: "confirmed"' },
-    send: { title: 'Sent to your backend', chip: 'POST /orders' },
+    send: { title: 'Sent to your dashboard', chip: 'POST /orders' },
   },
 }
 
@@ -173,7 +173,7 @@ export const footer = {
       links: [
         { label: 'Getting started', href: '#' },
         { label: 'Contact us', href: '#' },
-        { label: 'Book a demo', href: '#' },
+        { label: 'Book a demo', href: links.demo },
       ],
     },
     // {
