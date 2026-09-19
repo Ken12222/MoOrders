@@ -1,0 +1,282 @@
+/* ==========================================================================
+   Design tokens (sampled from the Figma file)
+   ========================================================================== */
+:root {
+  /* Colour */
+  --purple: #6f47eb;
+  --purple-700: #5b36d6; /* hover + purple text on lavender (passes AA) */
+  --lav-50: #eff0fc;
+  --lav-100: #e6e8fc;
+  --lav-200: #d8dbfb;
+  --lav-300: #bdb6f7;
+  --ink: #1c1934;
+  --muted: #5e5d6d;
+  --line: rgb(28 25 52 / 0.1);
+  --navy: #1c1934;
+  --green: #42d17b;
+  --green-ink: #0f6b3a;
+  --amber: #f5b83d;
+  --amber-ink: #7a4b00;
+  --sky: #c6ecfb;
+  --sky-ink: #1d4e69;
+
+  /* Type */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-ui: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --gutter: clamp(16px, 3vw, 40px);
+  --radius-panel: 20px;
+  --radius-card: 24px;
+  --radius-ctrl: 8px;
+  --shadow-float: 0 12px 32px rgb(28 25 52 / 0.12), 0 2px 6px rgb(28 25 52 / 0.06);
+}
+
+/* ==========================================================================
+   Reset + base
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: clamp(1.875rem, 1.25rem + 1.9vw, 2.5rem);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 3px;
+}
+
+[id] {
+  scroll-margin-top: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ==========================================================================
+   Layout helpers
+   ========================================================================== */
+.container {
+  width: min(100% - 2 * var(--gutter), 1360px);
+  margin-inline: auto;
+}
+
+.inner {
+  width: min(100% - 2 * var(--gutter), 1160px);
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--radius-ctrl);
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn--sm {
+  height: 40px;
+  padding: 0 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.btn--lg {
+  height: 48px;
+  padding: 0 26px;
+}
+
+.btn--primary {
+  background: var(--purple);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--purple-700);
+}
+
+.btn--soft {
+  background: var(--lav-200);
+  color: var(--purple-700);
+}
+
+.btn--soft:hover {
+  background: #cbcffa;
+}
+
+.btn--white {
+  background: #fff;
+  color: var(--purple-700);
+}
+
+.btn--white:hover {
+  background: var(--lav-50);
+}
+
+/* Shared small chip (used in mockups) */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.chip--sky {
+  background: var(--sky);
+  color: var(--sky-ink);
+}
+
+.chip--lav {
+  background: var(--lav-200);
+  color: var(--purple-700);
+}
+
+.chip--ok {
+  background: #d3f5e2;
+  color: var(--green-ink);
+}
+
+.chip--low {
+  background: #fdecc4;
+  color: var(--amber-ink);
+}
+
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.logo--dark {
+  color: var(--purple);
+}
+
+.logo--dark .logo__word {
+  color: var(--ink);
+}
+
+.logo--light {
+  color: #fff;
+}
+
+.logo--light .logo__word {
+  color: #fff;
+}
+
+.logo__word {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

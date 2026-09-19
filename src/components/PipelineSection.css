@@ -1,0 +1,200 @@
+.pipe {
+  padding: clamp(56px, 8vw, 96px) clamp(16px, 3vw, 40px) clamp(64px, 9vw, 128px);
+  border-radius: var(--radius-panel);
+  background: var(--lav-50);
+}
+
+.pipe__head {
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.pipe__head p {
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.pipe__body {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: clamp(40px, 6vw, 88px);
+  align-items: center;
+  max-width: 1040px;
+  margin: clamp(48px, 6vw, 80px) auto 0;
+}
+
+.pipe__copy h3 {
+  font-size: 1.375rem;
+}
+
+.pipe__text {
+  max-width: 26rem;
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.pipe__list-title {
+  margin-top: 28px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.pipe__list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pipe__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pipe__list svg {
+  flex: none;
+  color: var(--purple);
+}
+
+/* ---------- Flow diagram ---------- */
+.flow {
+  container-type: inline-size;
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.flow__stage {
+  position: relative;
+  aspect-ratio: 500 / 296;
+}
+
+.flow__plate {
+  position: absolute;
+  top: 18.9%;
+  right: 0;
+  left: 0;
+  height: 67.6%;
+  border-radius: 4px;
+  background: var(--lav-200);
+}
+
+.flow__lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #56547a;
+  stroke-width: 1.2;
+}
+
+.flow__dot {
+  position: absolute;
+  width: 1.8cqw;
+  height: 1.8cqw;
+  border: 1px solid #56547a;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6cqw;
+  height: 28.4%;
+  padding: 0 3cqw;
+  border: 1px solid #d3d5ee;
+  border-radius: 1.4cqw;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(28 25 52 / 0.06);
+}
+
+.node--start {
+  top: 0;
+  left: 8%;
+  width: 48%;
+}
+
+.node--confirm {
+  top: 35.1%;
+  left: 38%;
+  width: 56%;
+  border: 2px solid var(--purple);
+}
+
+.node--send {
+  top: 70.3%;
+  left: 14%;
+  width: 52%;
+}
+
+.node__row {
+  display: flex;
+  align-items: center;
+  gap: 2cqw;
+}
+
+.node__icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 5.6cqw;
+  height: 5.6cqw;
+  border-radius: 1.2cqw;
+  background: var(--purple);
+  color: #fff;
+}
+
+.node__icon svg {
+  width: 3.2cqw;
+  height: 3.2cqw;
+}
+
+.node__icon--green {
+  background: var(--green);
+}
+
+.node__title {
+  font-family: var(--font-display);
+  font-size: 3cqw;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.node__chips {
+  display: flex;
+  align-items: center;
+  gap: 1.6cqw;
+}
+
+.node__joiner {
+  font-size: 2.2cqw;
+}
+
+.node .chip {
+  height: 4.4cqw;
+  padding: 0 2cqw;
+  font-size: 2.2cqw;
+}
+
+.chip--code {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-weight: 500;
+}
+
+@media (max-width: 859px) {
+  .pipe__body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pipe__copy {
+    max-width: 32rem;
+    margin-inline: auto;
+  }
+}

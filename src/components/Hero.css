@@ -1,0 +1,68 @@
+.hero {
+  /* How far the demo frame rides up into the lavender panel */
+  --overlap: clamp(96px, 17vw, 242px);
+}
+
+.hero__panel {
+  padding: clamp(48px, 7vw, 100px) 24px calc(var(--overlap) + 28px);
+  border-radius: var(--radius-panel);
+  background: var(--lav-50);
+  text-align: center;
+}
+
+.hero__title {
+  max-width: 17em;
+  margin-inline: auto;
+  font-size: clamp(2.375rem, 1.3rem + 3.9vw, 4rem);
+  line-height: 1.14;
+}
+
+.hero__lead {
+  max-width: 660px;
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: clamp(1rem, 0.94rem + 0.3vw, 1.125rem);
+  line-height: 1.7;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  margin-top: 28px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.hero__trust li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__trust svg {
+  flex: none;
+  color: var(--purple);
+}
+
+.hero__demo {
+  position: relative;
+  width: min(100% - 2 * var(--gutter), 1060px);
+  margin: calc(-1 * var(--overlap)) auto 0;
+}
+
+@media (max-width: 640px) {
+  .hero__actions .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+/* The banner straddles the white page and the navy footer */
+.closing {
+  background: linear-gradient(#fff 0 72%, var(--navy) 72% 100%);
+}
+
+.closing__card {
+  position: relative;
+  padding: clamp(56px, 7vw, 88px) 24px clamp(56px, 7vw, 80px);
+  overflow: hidden;
+  border-radius: var(--radius-panel);
+  background: var(--purple);
+  color: #fff;
+  text-align: center;
+}
+
+.closing__card h2 {
+  max-width: 22em;
+  margin-inline: auto;
+  color: #fff;
+  font-size: clamp(2rem, 1.2rem + 2.8vw, 2.875rem);
+  font-weight: 500;
+}
+
+.closing__body {
+  position: relative;
+  max-width: 34rem;
+  margin: 20px auto 36px;
+  color: rgb(255 255 255 / 0.88);
+}
+
+.closing__note {
+  position: relative;
+  margin-top: 16px;
+  color: rgb(255 255 255 / 0.8);
+  font-size: 0.875rem;
+}
+
+.closing__card .btn {
+  position: relative;
+}
+
+.closing__card :focus-visible {
+  outline-color: #fff;
+}
+
+.closing__blocks {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 274px;
+  height: auto;
+  fill: rgb(255 255 255 / 0.12);
+}
+
+.closing__blocks--left {
+  left: 0;
+}
+
+.closing__blocks--right {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+@media (min-width: 1000px) {
+  .closing__blocks {
+    display: block;
+  }
+}
