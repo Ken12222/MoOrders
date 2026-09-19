@@ -27,16 +27,6 @@ export const nav = [
   { label: 'How it works', href: '#how-it-works' },
   { label: 'Features', href: '#features' },
   { label: 'Pricing', href: '#get-started' }, // TODO: link to a pricing page when you have one
-  // {
-  //   label: 'Resources',
-  //   children: [
-  //     { label: 'Guides', href: '#' },
-  //     { label: 'API docs', href: '#' },
-  //     { label: 'Help center', href: '#' },
-  //     { label: 'Blog', href: '#' },
-  //   ],
-  // },
-  // { label: 'Company', href: '#company' },
 ]
 
 export const hero = {
@@ -61,20 +51,20 @@ export const demo = {
     'Example: a customer orders two sourdough loaves and a box of croissants on WhatsApp. MoOrders asks about delivery, confirms the total, and sends the finished order to the backend.',
   messages: [
     { from: 'customer', at: 1, time: '10:41', text: 'Hi! Can I get 2 sourdough loaves and a box of croissants for Friday?' },
-    { from: 'ai', at: 3, time: '10:41', text: 'Hi Sam! That’s 2 sourdough loaves ($9 each) and 1 croissant box ($14). Pickup or delivery?' },
+    { from: 'ai', at: 3, time: '10:41', text: 'Hi Sam! That’s 2 sourdough loaves (GH¢9 each) and 1 croissant box (GH¢14). Pickup or delivery?' },
     { from: 'customer', at: 4, time: '10:42', text: 'Delivery please. 14 Palm Street' },
-    { from: 'ai', at: 6, time: '10:42', text: 'Delivery is $4, so your total is $36 for Friday. Shall I confirm?' },
+    { from: 'ai', at: 6, time: '10:42', text: 'Delivery is GH¢4, so your total is GH¢36 for Friday. Shall I confirm?' },
     { from: 'customer', at: 7, time: '10:42', text: 'Yes please 🙏' },
     { from: 'ai', at: 9, time: '10:43', text: 'Order confirmed! We’ll message you when it’s on the way.' },
   ],
   order: {
     customer: 'Sam · +1 555 0142',
     items: [
-      { qty: 2, name: 'Sourdough loaf', price: '$18' },
-      { qty: 1, name: 'Croissant box', price: '$14' },
+      { qty: 2, name: 'Sourdough loaf', price: 'GH¢18.00' },
+      { qty: 1, name: 'Croissant box', price: 'GH¢14.00' },
     ],
     delivery: 'Fri · 14 Palm Street',
-    total: '$36',
+    total: 'GH¢36.00',
   },
 }
 
