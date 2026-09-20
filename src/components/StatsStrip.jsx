@@ -6,7 +6,7 @@ const ICONS = { timer: Timer, moon: Moon, badge: BadgeCheck, languages: Language
 
 export default function StatsStrip() {
   return (
-    <section className="stats" aria-label="MoOrders at a glance">
+    <section className="stats" aria-label="MoStock at a glance">
       {/* Decorative blocks peeking in from the left edge */}
       <svg className="stats__blocks" viewBox="0 0 122 341" aria-hidden="true" focusable="false">
         <rect x="0" y="0" width="75" height="42" />

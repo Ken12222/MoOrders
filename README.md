@@ -1,6 +1,6 @@
-# MoOrders landing page
+# MoStock landing page
 
-A Vite + React landing page for MoOrders, an AI ordering system that takes
+A Vite + React landing page for MoStock, an AI ordering system that takes
 orders on WhatsApp and sends them to your backend.
 
 ## Run it

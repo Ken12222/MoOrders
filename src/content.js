@@ -4,13 +4,13 @@
  */
 
 export const brand = {
-  name: 'MoOrders',
+  name: 'MoStock',
   tagline: 'AI order taking on WhatsApp, connected to your dashboard.',
 }
 
 /** TODO: point these at your real destinations (email, sign-up, login, docs). */
 export const links = {
-  demo: 'mailto:hello@moorders.com?subject=Book%20a%20demo%20with%20MoOrders&body=Hi%20MoOrders%2C%0A%0AI%27d%20like%20to%20book%20a%20demo.%0A%0A',
+  demo: 'mailto:hello@mostock.com?subject=Book%20a%20demo%20with%20MoStock&body=Hi%20MoStock%2C%0A%0AI%27d%20like%20to%20book%20a%20demo.%0A%0A',
   signup: '#',
   login: '#',
   docs: '#',
@@ -48,7 +48,7 @@ export const demo = {
   shopName: 'Sunny Side Bakery',
   shopStatus: 'Order assistant',
   screenReaderSummary:
-    'Example: a customer orders two sourdough loaves and a box of croissants on WhatsApp. MoOrders asks about delivery, confirms the total, and sends the finished order to the backend.',
+    'Example: a customer orders two sourdough loaves and a box of croissants on WhatsApp. MoStock asks about delivery, confirms the total, and sends the finished order to the backend.',
   messages: [
     { from: 'customer', at: 1, time: '10:41', text: 'Hi! Can I get 2 sourdough loaves and a box of croissants for Friday?' },
     { from: 'ai', at: 3, time: '10:41', text: 'Hi Sam! That’s 2 sourdough loaves (GH¢9 each) and 1 croissant box (GH¢14). Pickup or delivery?' },
@@ -82,7 +82,7 @@ export const stats = [
 export const ai = {
   id: 'how-it-works',
   title: 'An order taker that never misses a message',
-  body: 'MoOrders reads text and voice notes the way customers actually write them. It asks for anything that’s missing, checks your catalog, and confirms every detail before an order goes anywhere.',
+  body: 'MoStock reads text and voice notes the way customers actually write them. It asks for anything that’s missing, checks your catalog, and confirms every detail before an order goes anywhere.',
   points: [
     { icon: 'mic', text: 'Understands text, voice notes, and slang' },
     { icon: 'package', text: 'Checks stock and prices as it chats' },
@@ -114,7 +114,7 @@ export const pipeline = {
   title: 'From chat to dashboard, automatically',
   lead: 'Every order follows the same path, so nothing gets lost between a customer’s message and your fulfillment system.',
   heading: 'Send orders where you need them',
-  body: 'The moment a customer confirms, MoOrders sends the order to your backend as clean, structured data.',
+  body: 'The moment a customer confirms, MoStock sends the order to your backend as clean, structured data.',
   listTitle: 'Every order includes',
   list: [
     'Customer name and WhatsApp number',
@@ -136,7 +136,7 @@ export const cards = {
     {
       tag: 'Whatsapp Integration',
       title: 'Plug with your existing WhatsApp Number',
-      body: 'No need to change your number or use a new one. MoOrders works with your existing WhatsApp number, so you can keep the same contact with your customers.',
+      body: 'No need to change your number or use a new one. MoStock works with your existing WhatsApp number, so you can keep the same contact with your customers.',
       // cta: 'Read the API docs',
       // href: links.docs,
     },
@@ -153,7 +153,7 @@ export const cards = {
 export const closing = {
   id: 'get-started',
   title: 'Start taking orders on WhatsApp today',
-  body: 'Connect your WhatsApp Business number, add your catalog, and let MoOrders handle the conversations. Confirmed orders land in your backend, ready to fulfill.',
+  body: 'Connect your WhatsApp Business number, add your catalog, and let MoStock handle the conversations. Confirmed orders land in your backend, ready to fulfill.',
   cta: 'Get Started',
   note: 'No credit card required.',
 }

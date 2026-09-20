@@ -96,9 +96,9 @@ export default function Header() {
           </nav>
 
           <div className="header__actions">
-            <a className="btn btn--sm btn--soft" href={links.login}>
+            {/* <a className="btn btn--sm btn--soft" href={links.login}>
               Log in
-            </a>
+            </a> */}
             <a className="btn btn--sm btn--primary" href={links.demo}>
               Book a demo
             </a>

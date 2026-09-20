@@ -1,6 +1,6 @@
 import { brand } from '../content'
 
-/** The MoOrders mark: a solid square framed by four slim bars. */
+/** The MoStock mark: a solid square framed by four slim bars. */
 export function LogoMark({ size = 24 }) {
   return (
     <svg
